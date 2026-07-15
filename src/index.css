@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-accent: #FFCE00;
+  --color-bento-light: #FAFAFA;
+  --color-bento-dark: #121212;
+  --color-border-light: #EDEDED;
+  --color-border-dark: #262626;
+}
+
+/* Custom Bento Grid Utility classes */
+.bento-grid-container {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+}
+
+.bento-card {
+  border-radius: 1.5rem; /* rounded-3xl */
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Base style resets and customizations for minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.2);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}

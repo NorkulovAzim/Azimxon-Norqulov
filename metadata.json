@@ -1,0 +1,6 @@
+{
+  "name": "GERMANIST Language Centre",
+  "description": "An elegant, minimalistic educational website for GERMANIST German Language Centre, supporting Uzbek, Russian, and German with dark/light mode toggle, course details, placement testing, and registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
